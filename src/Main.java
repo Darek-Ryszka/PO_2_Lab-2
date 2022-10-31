@@ -113,7 +113,7 @@ public class Main {
         tx.setEditable(false);
         tx.setOpaque(false);
         tx.setTabSize(3);
-        tx.setPreferredSize(new Dimension(800, 500));
+        tx.setPreferredSize(new Dimension(750, 400));
 
        JOptionPane.showMessageDialog(null, tx , "Tabliczka", JOptionPane.PLAIN_MESSAGE);
         System.exit(0);
