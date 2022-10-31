@@ -107,8 +107,9 @@ public class Main {
 //        }
 
         String s = "";
-
         int x;
+
+        JPanel panel = new JPanel(new GridLayout(1, 1));
 
         for (int i = 0; i < 11; i++) {
 
@@ -152,12 +153,15 @@ public class Main {
             }
             System.out.print("\n");
             s += "\n";
+
         }
+        for (int o = 1; o <= 121; o++){
+            panel.add(new JTextArea(s));
+        }
+//        panel.setPreferredSize(new Dimension(1000, 1000));
 
 
-
-
-       JOptionPane.showMessageDialog(null, s , "Tabliczka", JOptionPane.PLAIN_MESSAGE);
+       JOptionPane.showMessageDialog(null, panel , "Tabliczka", JOptionPane.PLAIN_MESSAGE);
         System.exit(0);
     }
 }
